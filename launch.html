@@ -463,14 +463,10 @@
         </a>
         <button class="btn-replay" id="replay-btn">
           <span>🔄 Replay Ceremony</span>
-        </button>
       </div>
     </div>
 
   </div>
-
-  <!-- Load Celebration Confetti & Firework Script -->
-  <script src="assets/js/celebration.js"></script>
 
   <script>
     document.addEventListener('DOMContentLoaded', () => {
@@ -589,11 +585,6 @@
             countdownNum.textContent = "🚀";
             countdownLabel.textContent = "ZSYNORA TECHNOLOGIES IS LIVE!";
             playGrandFanfare();
-
-            // 1. Trigger Massive Fireworks & Confetti Celebration ONLY after countdown ends
-            if (window.triggerCelebration) {
-              window.triggerCelebration();
-            }
 
             // 2. Open website in new tab ONLY when countdown ends
             try {

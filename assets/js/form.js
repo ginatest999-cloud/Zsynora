@@ -64,7 +64,6 @@ function setupFormHandler(formId, successCardId) {
       form.reset();
       form.style.display = 'none';
       successCard.classList.add('active');
-      if (window.triggerCelebration) window.triggerCelebration();
       submitBtn.disabled = false;
       submitBtn.innerHTML = originalText;
     }, 600);
